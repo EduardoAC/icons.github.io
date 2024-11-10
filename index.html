@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo different approaches for using Icons on your project</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #f4f4f9;
+        color: #333;
+      }
+      h1 {
+        text-align: center;
+        color: #444;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+      }
+      .icon-box {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 15px;
+        width: 180px;
+        text-align: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .icon {
+        font-size: 32px;
+        margin-bottom: 10px;
+      }
+      .description {
+        font-size: 14px;
+        color: #666;
+      }
+      svg {
+        width: 32px;
+        height: 32px;
+        fill: #007bff;
+      }
+    </style>
+    <!-- Material Symbols Icons -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Demo different approaches for using Icons on your project</h1>
+
+    <div class="container">
+      <!-- Icon Font (Material Symbols Outlined) -->
+      <div class="icon-box">
+        <span class="material-symbols-outlined icon">home</span>
+        <div class="description">Material Symbols (Outlined)</div>
+      </div>
+
+      <!-- Icon Font (Material Symbols Rounded) -->
+      <div class="icon-box">
+        <span class="material-symbols-rounded icon">settings</span>
+        <div class="description">Material Symbols (Rounded)</div>
+      </div>
+
+      <!-- Inline SVG Icon -->
+      <div class="icon-box">
+        <svg
+          class="icon"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+          ></path>
+        </svg>
+        <div class="description">Inline SVG Icon</div>
+      </div>
+
+      <!-- Dynamically Loaded SVG -->
+      <div class="icon-box">
+        <div class="icon">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Material_design_icons_logo.svg"
+            alt="Dynamic SVG"
+            width="32"
+            height="32"
+          />
+        </div>
+        <div class="description">Dynamically Loaded SVG</div>
+      </div>
+    </div>
+  </body>
+</html>
